@@ -1,0 +1,26 @@
+.Content {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.ContactText {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.ContactText h1 {
+    color: white;
+}
+
+.ContactText p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Map {
+    width: 95%; 
+    height: 400px;
+    margin: 0 auto;
+}

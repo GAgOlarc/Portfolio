@@ -1,0 +1,82 @@
+.NavigationItem {
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+    width: auto;
+    font-size: 1rem;
+}
+
+.NavigationItem a {
+    color: #222;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    opacity: 0.7;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+    color: black;
+    opacity: 1;
+    border-bottom: 2px solid black;
+}
+
+.Icon {
+    padding-right: 5px;
+}
+
+@media (min-width: 601px) {
+    .NavigationItem {
+        margin: 0;
+        padding: 0 10px;
+        display: flex;
+        height: 100%;
+        width: auto;
+        align-items: center;
+    }
+    
+    .NavigationItem a {
+        color: #333;
+        height: auto;
+        margin: 0 15px;
+        font-size: 1.2rem;
+        opacity: 1;
+    }
+
+    .NavigationItem a .Content {
+        display: none;
+    }
+
+    .NavigationItem a:active,
+    .NavigationItem a.active {
+        border-bottom: 4px solid #F6F6F6; 
+        color: #F6F6F6;
+        opacity: 1;
+    }
+
+    .NavigationItem a:active .Icon,
+    .NavigationItem a.active .Icon{
+        display: none;
+    }
+
+    .NavigationItem a:active .Content,
+    .NavigationItem a.active .Content{
+        display: inline-block;
+    }
+
+    .NavigationItem a:hover { 
+        border-bottom: none;
+        color: #F6F6F6;
+        opacity: 1;
+    }
+
+    .NavigationItem a:hover .Icon{ 
+        display: none;
+    }
+
+    .NavigationItem a:hover .Content{ 
+        display: inline-block;
+    }
+}
