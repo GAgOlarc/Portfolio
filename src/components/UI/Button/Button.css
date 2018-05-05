@@ -1,29 +1,21 @@
 .Button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    outline: none;
-    cursor: pointer;
-    font: inherit;
-    padding: 10px;
-    margin: 10px;
-    font-weight: bold;
-}
+    display: inline-block;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+} 
 
-.Button:first-of-type {
-    margin-left: 0;
-    padding-left: 0;
+.Button:hover {
+    color: #F6F6F6;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .Button:disabled {
-    color: #ccc;
     cursor: not-allowed;
-}
-
-.Success {
-    color: #5C9210;
-}
-
-.Danger {
-    color: #944317;
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
 import classes from './Contact.css';
@@ -16,6 +15,7 @@ class Contact extends Component {
                 defaultOptions={{
                     gestureHandling: "cooperative",
                     fullscreenControl: false,
+                    mapTypeControl: false,
                     styles: demoFancyMapStyles
                 }}
             >

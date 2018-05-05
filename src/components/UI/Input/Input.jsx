@@ -23,21 +23,8 @@ const input = ( props ) => {
                 className={inputClasses.join(' ')}
                 {...props.elementConfig}
                 value={props.value}
+                rows={'5'}
                 onChange={props.changed} />;
-            break;
-        case ( 'select' ):
-            inputElement = (
-                <select
-                    className={inputClasses.join(' ')}
-                    value={props.value}
-                    onChange={props.changed}>
-                    {props.elementConfig.options.map(option => (
-                        <option key={option.value} value={option.value}>
-                            {option.displayValue}
-                        </option>
-                    ))}
-                </select>
-            );
             break;
         default:
             inputElement = <input
@@ -49,7 +36,6 @@ const input = ( props ) => {
 
     return (
         <div className={classes.Input}>
-            <label className={classes.Label}>{props.label}</label>
             {inputElement}
         </div>
     );

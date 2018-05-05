@@ -1,32 +1,66 @@
 .Input {
     width: 100%;
-    padding: 10px;
     box-sizing: border-box;
-}
-
-.Label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 8px;
 }
 
 .InputElement {
+    width: 100%;
+    box-sizing: border-box;
     outline: none;
-    border: 1px solid #ccc;
-    background-color: white;
+    background-color: rgb(63, 64, 65);
     font: inherit;
-    padding: 6px 10px;
+    padding: 15px;
     display: block;
     width: 100%;
     box-sizing: border-box;
+    color:  rgba(255, 255, 255, 0.5);
+    border: none;
+    margin-bottom: 10px;
+    transition: border-bottom .4s ease-out;
+}
+
+.InputElement::placeholder { 
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1; 
+    font: inherit;
+}
+
+.Invalid {
+    border-bottom: 2px solid red;
 }
 
 .InputElement:focus {
     outline: none;
-    background-color: #ccc;
+    border-bottom: 2px solid white;
 }
 
-.Invalid {
-    border: 1px solid red;
-    background-color: #FDA49A;
+@media(min-width: 600px) {
+    .Input:first-child {
+        width: 49%;
+        margin-right: auto;
+    }
+
+    .Input:nth-child(2) {
+        width: 49%;
+    }
+}
+
+@media(min-width: 800px) {
+    .Input:first-child {
+        width: 100%;
+    }
+
+    .Input:nth-child(2) {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1000px) {
+    .Input:first-child {
+        width: 49%;
+    }
+
+    .Input:nth-child(2) {
+        width: 49%;
+    }
 }
