@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import classes from './Contact.css';
 import ContactForm from './ContactForm/ContactForm.jsx';
@@ -17,11 +18,8 @@ class Contact extends Component {
                     fullscreenControl: false,
                     mapTypeControl: false,
                     styles: demoFancyMapStyles
-                }}
-            >
-                <Marker
-                    position={{ lat: 51.6523, lng: -0.0800 }}
-                />
+                }} >
+                <Marker position={{ lat: 51.489548, lng: 0.310800 }} />
             </GoogleMap>
         ));
 
@@ -31,6 +29,14 @@ class Contact extends Component {
                     <h1>Contact Me</h1>
                     <p>If you have any questions, please don't hesitate to contact using form below.  </p>
                     <ContactForm />
+                    <div className={classes.Link}>
+                        <FontAwesomeIcon icon={'at'} size={'lg'} className={classes.Icon} />
+                        <a href="mailto:contact@andrasnett.com">contact@andrasnett.com</a>
+                    </div>
+                    <div className={classes.Link}>
+                        <FontAwesomeIcon icon={['fab', 'github']} size={'lg'} className={classes.Icon} />
+                        <a href="https://github.com/andrasnett" target='_blank'>andrasnett</a>
+                    </div>
                 </div>
                 <div className={classes.Map}>
                     <MapWithAMarker

@@ -19,10 +19,33 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
+.Link {
+    margin-bottom: 8px; 
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.Link:hover {
+    color: #F6F6F6;
+}
+
+.Icon {
+    margin-right: 5px;
+}
+
+.Link a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Link a:visited {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .Map {
     width: 95%; 
     height: 400px;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
 }
 
 @media(min-width: 400px) {
@@ -55,6 +78,10 @@
         margin-top: 50px;
         margin-left: 30px;
         margin-right: 30px;
+    }
+
+    .Link {
+        text-align: left;
     }
 
     .Map {

@@ -7,6 +7,7 @@ import faHome from '@fortawesome/fontawesome-free-solid/faHome';
 import faUser from '@fortawesome/fontawesome-free-solid/faUserCircle';
 import faFolder from '@fortawesome/fontawesome-free-solid/faFolderOpen';
 import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
+import faAt from '@fortawesome/fontawesome-free-solid/faAt';
 
 import Layout from './hoc/Layout/Layout.jsx';
 import Home from './containers/Home/Home.jsx';
@@ -15,7 +16,7 @@ import Projects from './containers/Projects/Projects.jsx';
 import Contact from './containers/Contact/Contact.jsx';
 
 
-fontawesome.library.add(brands, faHome, faUser, faFolder, faEnvelope);
+fontawesome.library.add(brands, faHome, faUser, faFolder, faEnvelope, faAt);
 
 class App extends Component {
     render() {

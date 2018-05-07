@@ -117,7 +117,7 @@ class ContactForm extends Component {
                         changed={(event) => this.inputChangedHandler(event, formElement.id)} />
                 })}
                 <div className={classes.Button}>
-                    <Button disabled={!this.state.formIsValid}>Send</Button>
+                    <Button disabled={!this.state.formIsValid}>SEND</Button>
                 </div>
             </form>
         );
