@@ -35,7 +35,7 @@ class Contact extends Component {
                     </div>
                     <div className={classes.Link}>
                         <FontAwesomeIcon icon={['fab', 'github']} size={'lg'} className={classes.Icon} />
-                        <a href="https://github.com/andrasnett" target='_blank'>andrasnett</a>
+                        <a href="https://github.com/andrasnett" target='_blank' rel='noopener noreferrer'>andrasnett</a>
                     </div>
                 </div>
                 <div className={classes.Map}>
