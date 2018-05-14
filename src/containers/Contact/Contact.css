@@ -1,4 +1,4 @@
-.Content {
+.Contact {
     width: 100%;
     padding-top: 80px;
     background: rgb(37, 38, 39);
@@ -67,7 +67,7 @@
 }
 
 @media(min-width: 800px) {
-    .Content {
+    .Contact {
         display: flex;
         flex-direction: row;
         padding-bottom: 0;

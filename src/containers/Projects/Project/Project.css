@@ -1,0 +1,44 @@
+.Project {
+    width: 400px;
+    height: 280px;
+    margin: 20px;
+    background: rgba(145, 145, 145, 0.5);
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.Project a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.Card {
+    width: 100%;
+    height: 220px;
+}
+
+.Card img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Text {
+    text-align: center;
+    margin-top: 17px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media(min-width: 700px) {
+    .Project {
+        width: 300px;
+        height: 220px;
+    }
+
+    .Card {
+        height: 160px;
+    }
+}

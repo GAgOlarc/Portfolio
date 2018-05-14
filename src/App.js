@@ -11,20 +11,21 @@ import faAt from '@fortawesome/fontawesome-free-solid/faAt';
 
 import Layout from './hoc/Layout/Layout.jsx';
 import Home from './containers/Home/Home.jsx';
-import About from './containers/About/About.jsx';
-import Projects from './containers/Projects/Projects.jsx';
-import Contact from './containers/Contact/Contact.jsx';
-
+import asyncComponent from './hoc/asyncComponent/asyncComponent';
 
 fontawesome.library.add(brands, faHome, faUser, faFolder, faEnvelope, faAt);
+
+const asyncAbout = asyncComponent(() => import('./containers/About/About.jsx'));
+const asyncProjects = asyncComponent(() => import('./containers/Projects/Projects.jsx'));
+const asyncContact = asyncComponent(() => import('./containers/Contact/Contact.jsx'));
 
 class App extends Component {
     render() {
         const routes =
             <Switch>
-                <Route path='/about' component={About} />
-                <Route path='/projects' component={Projects} />
-                <Route path='/contact' component={Contact} />
+                <Route path='/about' component={asyncAbout} />
+                <Route path='/projects' component={asyncProjects} />
+                <Route path='/contact' component={asyncContact} />
                 <Route path='/' exact component={Home} />
                 <Redirect to='/' />
             </Switch>

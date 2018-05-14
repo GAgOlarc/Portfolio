@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import classes from './Home.css';
 
 const home = () => (
-    <div className={classes.Parallax}>
+    <div className={classes.Home}>
         <div className={classes.Backdrop}>
             <div className={classes.Content}>
                 <h1>Hi,</h1>

@@ -24,7 +24,7 @@ class Contact extends Component {
         ));
 
         return (
-            <div className={classes.Content}>
+            <div className={classes.Contact}>
                 <div className={classes.ContactText}>
                     <h1>Contact Me</h1>
                     <p>If you have any questions, please don't hesitate to contact using form below.  </p>

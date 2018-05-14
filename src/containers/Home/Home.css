@@ -1,7 +1,6 @@
-.Parallax {
+.Home {
     background-image: url('../../assets/images/computer.jpg');
     min-height: 100vh; 
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
