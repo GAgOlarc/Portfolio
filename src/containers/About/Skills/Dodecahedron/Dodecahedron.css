@@ -28,7 +28,7 @@
 }
 
 .polyhedron .container {
-      position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -136,4 +136,11 @@
 .Jquery {
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+@media(min-width: 800px) {
+    .wrapper {
+        position: relative;
+        top: -70px;
+    }
 }

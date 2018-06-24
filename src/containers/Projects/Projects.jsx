@@ -53,9 +53,10 @@ const projects = () => {
 
     return (
         <div className={classes.Projects}>
-            {/* <h1>Projects</h1> */}
-            <div className={classes.Content}>
-                {project}
+            <div className={classes.Backdrop}>
+                <div className={classes.Content}>
+                    {project}
+                </div>
             </div>
         </div>
     )

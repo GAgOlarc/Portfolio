@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import classes from './ContactForm.css';
 import Button from '../../../components/UI/Button/Button.jsx';
-// import Spinner from '../../../components/UI/Spinner/Spinner.jsx';
 import Input from '../../../components/UI/Input/Input.jsx';
 import { updateObject, checkValidity } from '../../../shared/utility';
 
@@ -14,7 +13,7 @@ class ContactForm extends Component {
                 elementConfig: {
                     type: 'text',
                     placeholder: 'Name',
-                    name: 'Name'
+                    name: 'Name',
                 },
                 value: '',
                 validation: {
@@ -30,7 +29,7 @@ class ContactForm extends Component {
                 elementConfig: {
                     type: 'email',
                     placeholder: 'E-Mail',
-                    name: 'Reply to'
+                    name: 'Reply to',
                 },
                 value: '',
                 validation: {

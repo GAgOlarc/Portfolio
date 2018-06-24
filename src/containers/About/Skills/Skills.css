@@ -18,12 +18,10 @@
 }
 
 @media(min-width: 800px) {
-    .Content p {
-        width: 40%;
+    .Skills {
+        margin-left: 5%;
     }
-}
 
-@media(min-width: 1000px) {
     .Content p {
         width: 40%;
     }

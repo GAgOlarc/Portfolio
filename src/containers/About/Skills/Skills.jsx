@@ -1,10 +1,7 @@
 import React from 'react';
-// import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import classes from './Skills.css';
 import Dodecahedron from './Dodecahedron/Dodecahedron.jsx';
-// import bootstrapSvg from '../../../assets/icons/bootstrap.svg';
-// import babelSvg from '../../../assets/icons/babel.svg';
 
 const skills = () => (
     <div className={classes.Skills}>
