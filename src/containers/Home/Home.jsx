@@ -7,13 +7,14 @@ const home = () => (
     <div className={classes.Home}>
         <div className={classes.Backdrop}>
             <div className={classes.Content}>
-                <h1>Hi,</h1>
-                <h1>I'm Andras,</h1>
-                <h1>Front End Developer.</h1>
-                <div className={classes.Paragraph}>
+                <div className={classes.Text}>
+                    <h1>Hi, My name is Andras,</h1>
+                    <h1>I'm a London based Front End Developer.</h1>
+                </div>
+                {/* <div className={classes.Paragraph}>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, numquam?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+                </div> */}
                 <NavLink to='/contact'>
                     Contact Me
                 </NavLink>
