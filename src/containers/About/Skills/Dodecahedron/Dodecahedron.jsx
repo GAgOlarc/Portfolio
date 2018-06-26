@@ -2,7 +2,6 @@ import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import classes from './Dodecahedron.css';
-import bootstrapSvg from '../../../../assets/icons/bootstrap.svg';
 import babelSvg from '../../../../assets/icons/babel.svg';
 
 const dodecahedron = () => {
@@ -57,7 +56,7 @@ const dodecahedron = () => {
                     </div>
                     <div className={[classes.face, classes.pentagon].join(' ')}>
                         <span>
-                            <img src={bootstrapSvg} alt="Bootstrap Logo" className={[classes.BootstrapSvg, classes.Rotate].join(' ')} />
+                            <FontAwesomeIcon icon={['fab', 'node']} size={'3x'} className={[classes.Icon, classes.Rotate].join(' ')} />
                         </span>
                     </div>
                     <div className={[classes.face, classes.pentagon].join(' ')}>

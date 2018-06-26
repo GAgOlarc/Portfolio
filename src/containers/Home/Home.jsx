@@ -11,10 +11,6 @@ const home = () => (
                     <h1>Hi, My name is Andras,</h1>
                     <h1>I'm a London based Front End Developer.</h1>
                 </div>
-                {/* <div className={classes.Paragraph}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, numquam?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div> */}
                 <NavLink to='/contact'>
                     Contact Me
                 </NavLink>

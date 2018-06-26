@@ -14,7 +14,7 @@ const about = () => (
                         <div className={classes.Face}>
                             <img src={faceJpg} alt="face" />
                         </div>
-                        <p>I'm Andras Nett, a front end developer. I value simple content structure, clean design patterns, and thoughtful interactions. I tend to code things from scratch, and enjoy bringing ideas to life in the browser. My skills are broad: from ux to design, front end to back end development.</p>
+                        <p>I'm Andras Nett, a front end developer. I value simple content structure, clean design patterns, and thoughtful interactions. I tend to code things from scratch, and enjoy bringing ideas to life in the browser. My skills are broad: from ux to design.</p>
                     </div>
                 </div>
                 <Skills className={classes.Skills} />
